@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.example.user.bt_ibeacon_json"
+        applicationId "com.example.user.btserver"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1

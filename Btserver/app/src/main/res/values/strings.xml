@@ -1,4 +1,3 @@
 <resources>
-    <string name="app_name">Bt_iBeacon_JSON</string>
-    <string name="str_iBeacon">test</string>
+    <string name="app_name">Btserver</string>
 </resources>
