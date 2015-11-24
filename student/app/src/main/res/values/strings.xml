@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_display">display</string>
+    <string name="title_activity_displayclass">displayclass</string>
+    <string name="title_activity_weekclass">weekclass</string>
 </resources>

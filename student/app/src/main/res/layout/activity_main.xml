@@ -8,14 +8,22 @@
     android:weightSum="1">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="176dp"
         android:layout_height="match_parent">
 
         <Spinner
             android:layout_width="wrap_content"
-            android:layout_height="95dp"
+            android:layout_height="138dp"
             android:id="@+id/spinner" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"
+            android:id="@+id/test"
+            android:onClick="gotodiplay" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -27,20 +35,21 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="search"
+            android:text="search藍芽"
             android:id="@+id/search" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="connect"
+            android:text="connect藍芽"
             android:id="@+id/connect" />
 
         <TextView
             android:layout_width="164dp"
             android:layout_height="0dp"
-            android:text="0.0"
             android:id="@+id/textView"
-            android:layout_weight="0.11" />
+            android:layout_weight="0.09" />
+
     </LinearLayout>
+
 </LinearLayout>

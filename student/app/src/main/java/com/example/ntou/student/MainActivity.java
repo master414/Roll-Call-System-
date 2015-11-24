@@ -38,7 +38,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     ArrayList<String> devices = new ArrayList<String>();
     BluetoothAdapter mBluetoothAdapter;
     IntentFilter intentfilter;
-    Button btnsearch,btnconnect;
+    Button btnsearch,btnconnect,bt;
     TextView tv1;
     Spinner spinner1;
     SppConnect sppConnect;
@@ -54,6 +54,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        bt=(Button)findViewById(R.id.test);
         btnsearch= (Button) this.findViewById(R.id.search);
         btnconnect= (Button) this.findViewById(R.id.connect);
         btnsearch.setOnClickListener(this);
@@ -93,7 +94,10 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         });
     }
 
-
+    public void gotodiplay(View v){
+        Intent it = new Intent(this,display.class);
+        startActivity(it);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -145,7 +149,11 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             sppConnect.start();
 
         }
+
     }
+
+
+
     private class SppReceiver extends Thread {
 
         private final InputStream input;

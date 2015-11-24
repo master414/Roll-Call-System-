@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ntou.student" >
+
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -18,6 +19,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".display"
+            android:label="@string/title_activity_display" >
+        </activity>
+        <activity
+            android:name=".displayclass"
+            android:label="@string/title_activity_displayclass" >
+        </activity>
+        <activity
+            android:name=".weekclass"
+            android:label="@string/title_activity_weekclass" >
         </activity>
     </application>
 
