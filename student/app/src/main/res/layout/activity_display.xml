@@ -266,7 +266,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="下一頁"
-                    android:id="@+id/button18" />
+                    android:id="@+id/button18"
+                    android:onClick="gotoclass" />
 
                 <Button
                     android:layout_width="wrap_content"

@@ -265,14 +265,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="上一頁"
-                    android:id="@+id/button37" />
+                    android:id="@+id/button37"
+                    android:onClick="gobackdisplay" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="返回"
-                    android:id="@+id/button38"
-                    android:onClick="goback" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

@@ -1,5 +1,6 @@
 package com.example.ntou.student;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +20,10 @@ public class display extends ActionBarActivity  implements View.OnClickListener{
         finish();
     }
 
+    public void gotoclass(View v){
+        Intent it2 = new Intent(this,displayclass.class);
+        startActivity(it2);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

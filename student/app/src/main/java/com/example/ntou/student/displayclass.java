@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class displayclass extends ActionBarActivity {
@@ -14,6 +15,9 @@ public class displayclass extends ActionBarActivity {
         setContentView(R.layout.activity_displayclass);
     }
 
+    public void gobackdisplay(View v){
+        finish();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
