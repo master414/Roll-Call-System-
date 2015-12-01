@@ -198,14 +198,15 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 // TODO: handle exception
             }
         }
-        Handler mBluetoothHandler = new Handler() {
-            public void handleMessage(Message message) {
-                if (msg != null)
-                    tv1.append(msg);
-                msg = null;
-            }
-        };
+
     }
+    Handler mBluetoothHandler = new Handler() {
+        public void handleMessage(Message message) {
+            if (msg != null)
+                tv1.append(msg);
+            msg = null;
+        }
+    };
     private class SppConnect extends Thread {
 
         private final BluetoothSocket mBluetoothSocket;
